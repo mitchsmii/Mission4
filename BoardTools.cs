@@ -4,16 +4,16 @@ public class BoardTools
 {
     public int CheckWinner(int[] gameBoard, int player)
     {
-        List<int> playerInputs = new List<int>();
-        for (int i = 0; i < gameBoard.Length; i++)
-        {
-            if (gameBoard[i] == player)
-            {
-                playerInputs.Add(i);
-            }
-        }
         
+        
+
+       
         int winner = 0;
+
+        //Checking for a tie
+        if (!gameBoard.Contains(0))
+            winner = 3;
+
         int[][] combinations = new int[8][]
         {
             new int[] { 0, 1, 2 },
@@ -37,11 +37,12 @@ public class BoardTools
                 gameBoard[combo[2]] == player)
             {
                 winner = player; // player
-            }
 
+            }
+            
         }
         
-        
+
 
         return winner;
     }
@@ -49,10 +50,30 @@ public class BoardTools
 
     public void PrintBoard(int[] gameBoard)
     {
+        string board = "";
+
+        for (int i = 0; i < gameBoard.Length; i++)
+        {
+            if (gameBoard[i] == 1)
+            {
+                board += "X";
+            }
+            else if (gameBoard[i] == 2)
+            {
+                board += "O";
+            }
+
+            else
+            {
+                board += i.ToString();
+            }
+        }
+    Console.WriteLine($"{board[0]} | {board[1]} | {board[2]}");
+    Console.WriteLine("---------" )
+    Console.WriteLine($"{board[3]} | {board[4]} | {board[5]}");
+    Console.WriteLine("---------")
+    Console.WriteLine($"{board[6]} | {board[7]} | {board[8]}");
         
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine();
 
     }
 }
