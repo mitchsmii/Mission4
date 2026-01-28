@@ -1,0 +1,5 @@
+/Users/mitchellsmith/RiderProjects/Mission4/obj/Debug/net10.0/Mission4.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mitchellsmith/RiderProjects/Mission4/obj/Debug/net10.0/Mission4.AssemblyInfoInputs.cache
+/Users/mitchellsmith/RiderProjects/Mission4/obj/Debug/net10.0/Mission4.AssemblyInfo.cs
+/Users/mitchellsmith/RiderProjects/Mission4/obj/Debug/net10.0/Mission4.csproj.CoreCompileInputs.cache
+/Users/mitchellsmith/RiderProjects/Mission4/obj/Debug/net10.0/Mission4.sourcelink.json
