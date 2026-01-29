@@ -4,14 +4,9 @@ public class BoardTools
 {
     public int CheckWinner(int[] gameBoard, int player)
     {
-        
-        
-
-       
         int winner = 0;
 
-        
-
+        //These are the possible game winning combos
         int[][] combinations = new int[8][]
         {
             new int[] { 0, 1, 2 },
@@ -52,7 +47,7 @@ public class BoardTools
     public void PrintBoard(int[] gameBoard)
     {
         string board = "";
-
+        // Inputting the the x's and the o's into the gameboard
         for (int i = 0; i < gameBoard.Length; i++)
         {
             if (gameBoard[i] == 1)
