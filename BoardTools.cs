@@ -10,9 +10,7 @@ public class BoardTools
        
         int winner = 0;
 
-        //Checking for a tie
-        if (!gameBoard.Contains(0))
-            winner = 3;
+        
 
         int[][] combinations = new int[8][]
         {
@@ -41,7 +39,10 @@ public class BoardTools
             }
             
         }
-        
+        //Checking for a tie
+        if (!gameBoard.Contains(0))
+            winner = 3;
+
 
 
         return winner;
